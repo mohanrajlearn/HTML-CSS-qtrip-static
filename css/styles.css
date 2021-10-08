@@ -1,0 +1,170 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  position: relative;
+}
+
+body {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+footer {
+  background: #f1f1f1;
+  width: 100%;
+  padding: 16px 0px;
+  color: #999;
+  vertical-align: bottom;
+  margin-top: 40px;
+  
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  background: #999;
+  margin: 20px 0px;
+}
+
+.content {
+  padding: 20px 0px;
+  
+}
+
+/* ================================== */
+/* Layout page CSS */
+/* ================================== */
+ 
+
+.tile {
+  padding: 10px 5px;
+	display: flex;
+	justify-content: center;
+}
+.tile img {
+  height: 300px;
+	width: 200px;
+  display: flex;
+	align-self: center;
+	border-radius: 8px;
+}
+.tile img:hover {
+	transform: rotate(10deg);
+	filter: contrast(200%) brightness(100%);
+}
+
+
+
+.tile-text {
+  color:#ccc;
+	font-weight:bold;
+	position: absolute;
+	z-index: 1;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	bottom: 26px;
+  
+	display: flex;
+	justify-content: center;
+
+}
+
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+ 
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/hero.jpg");
+
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.hero-subheading {
+  font-size: 20px;
+  font-weight: 50;
+}
+.hero-input {
+  width: 50%;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.nav-link {
+  margin-right: 36px;
+}
+
+/* ================================== */
+/* Adventures grid page CSS */
+/* ================================== */
+
+.adventure-card {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid rgb(231, 220, 220);
+  border-radius: 10px;
+}
+.adventure-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+}
+.adventure-card img:hover {
+  filter: grayscale(70%);
+}
+
+/* ================================== */
+/* Adventure details page CSS */
+/* ================================== */
+
+.adventure-detail-card {
+   
+}
+
+.adventure-card-image {
+  cursor: pointer;
+   
+}
+.adventure-card-image:hover {
+  filter: grayscale(70%);
+}
+.experience-content ul li {
+  margin-left: 16px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktops phones: */
+  #reservation {
+    width: 400px;
+    position: fixed;
+  }
+}
